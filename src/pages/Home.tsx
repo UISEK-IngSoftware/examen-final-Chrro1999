@@ -88,10 +88,10 @@ const translateGender = (gender: string): string => {
 
 const translateStatus = (status: string): string => {
   switch (status) {
-    case 'MALE':
-      return 'Hombre';
-    case 'FAMALE':
-      return 'Mujer';
+    case 'LIVE':
+      return 'Vivo';
+    case 'DEAD':
+      return 'Muerto';
     default:
       return 'Desconocido';
   }
@@ -117,7 +117,7 @@ return (
           <IonRefresherContent></IonRefresherContent>
         </IonRefresher>
 
-        {/* Loading spinner */}
+        {/* spinner */}
         <IonLoading
           isOpen={loading}
           message="Cargando personajes..."
